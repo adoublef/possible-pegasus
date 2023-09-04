@@ -8,6 +8,7 @@ export { type H as Handler } from "https://deno.land/x/hono@v3.5.7/types.ts";
 export {
     html,
     logger,
+    cors,
     memo,
     raw ,
     serveStatic,
