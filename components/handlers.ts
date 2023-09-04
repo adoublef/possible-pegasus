@@ -7,7 +7,7 @@ const { code } = await bundle(
     { cacheRoot: Deno.cwd(), allowRemote: true },
 );
 
-export function handleBundle(): Handler {
+export function handleCatalyst(): Handler {
     return /* async */ (c) => {
         c.header("content-type", "application/javascript; charset=utf-8");
         return c.newResponse(code);

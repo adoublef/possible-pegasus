@@ -37,8 +37,8 @@ const Content = (
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${title}</title>
-    <script src="https://unpkg.com/htmx.org@1.9.5" defer></script>
-    <script type="module" src="/index.js" defer></script>
+    <script src="/static/htmx.org@1.9.5.min.js" defer></script>
+    <script type="module" src="/static/index.js" defer></script>
 </head>
 <body>
     ${children}
