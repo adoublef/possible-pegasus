@@ -8,37 +8,21 @@ export function handleHome(): Handler {
 
         return c.html(
             <Html title={`Hello, ${name}`}>
-                <button hx-post={`/clicked?name=${name}`} hx-swap="outerHTML">
-                    Click Me
-                </button>
-                <hr />
-                <DropDown/>
-                <hr />
-                <nav>
+                <header>
+                    <nav>
+                        <a href="/">Home</a>
+                        <DropDown />
+                    </nav>
+                </header>
+                <main>
+                    <h1>Lorem ipsum dolor sit amet.</h1>
                     <button
-                        aria-expanded={false}
-                        aria-controls="options"
-                        onclick={`
-                        this.setAttribute("aria-expanded", !(this.getAttribute("aria-expanded") === "true" || false));
-
-                        const menu = this.nextElementSibling;
-                        menu.hidden = !menu.hidden;`}
-                        type="button"
+                        hx-post={`/clicked?name=${name}`}
+                        hx-swap="outerHTML"
                     >
-                        normal
+                        Click Me
                     </button>
-                    <ul id="options" hidden>
-                        <li>
-                            <a href="#a">a</a>
-                        </li>
-                        <li>
-                            <a href="#b">b</a>
-                        </li>
-                        <li>
-                            <a href="#c">c</a>
-                        </li>
-                    </ul>
-                </nav>
+                </main>
             </Html>,
         );
     };

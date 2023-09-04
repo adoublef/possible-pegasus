@@ -15,10 +15,12 @@ export const Html = (
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${title}</title>
+    <link rel="preload" href="/static/htmx.org@1.9.5.min.js" as="script" />
+    <link rel="preload" crossOrigin href="/static/index.js" as="script" />
     <script src="/static/htmx.org@1.9.5.min.js" defer></script>
-    <script type="module" src="/static/index.js" defer></script>
+    <script src="/static/index.js" defer type="module"></script>
 </head>
-<body hx-boost="${true}">
+<body>
     ${children}
 </body>
 </html>`;
@@ -36,9 +38,12 @@ export const HelloWorld = ({ name = "World" }) =>
     </span>
 </template>
 </hello-world>`;
+/**
+ * DropDown
+ */
 export const DropDown = ()=>
     html`
-<drop-down>
+<drop-down role="navigation" aria-label="primary">
 <template data-shadowroot>
 <button
     aria-expanded="false"
