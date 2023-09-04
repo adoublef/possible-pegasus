@@ -1,5 +1,8 @@
 import { HtmlEscapedString,html } from "$deps/hono.ts";
 
+// <link rel="preload" href="/static/htmx.org@1.9.5.min.js" as="script" />
+// <link rel="preload" href="/static/index.js" as="script" />
+
 // <head> - https://htmlhead.dev/
 export const Html = (
     { children, title }: {
@@ -12,8 +15,6 @@ export const Html = (
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${title}</title>
-    <link rel="preload" href="/static/htmx.org@1.9.5.min.js" as="script" />
-    <link rel="preload" href="/static/index.js" as="script" />
     <script src="/static/htmx.org@1.9.5.min.js" defer></script>
     <script type="module" src="/static/index.js" defer></script>
 </head>
@@ -39,5 +40,24 @@ export const DropDown = ()=>
     html`
 <drop-down>
 <template data-shadowroot>
+<button
+    aria-expanded="false"
+    aria-controls="options"
+    data-action="click:drop-down#expand"
+    data-target="drop-down.button"
+>
+    custom
+</button>
+<ul id="options" hidden>
+    <li>
+        <a href="#a">a</a>
+    </li>
+    <li>
+        <a href="#b">b</a>
+    </li>
+    <li>
+        <a href="#c">c</a>
+    </li>
+</ul>
 </template>
 </drop-down>`

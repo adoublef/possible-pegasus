@@ -1,8 +1,4 @@
-import {
-    attr,
-    controller,
-    target,
-} from "../deps/catalyst.ts";
+import { attr, controller, target } from "../deps/catalyst.ts";
 
 @controller /* https://catalyst.rocks/guide/decorators/ */
 export class HelloWorldElement extends HTMLElement {
@@ -18,4 +14,16 @@ export class HelloWorldElement extends HTMLElement {
 }
 
 @controller
-export class DropDownElement extends HTMLElement {}
+export class DropDownElement extends HTMLElement {
+    @target
+    declare button: HTMLButtonElement;
+
+    expand() {
+        const expanded = this.button.getAttribute("aria-expanded") === "true" ||
+            false;
+        this.button.ariaExpanded = (!expanded).toString();
+
+        const menu = this.button.nextElementSibling as HTMLElement | null;
+        menu && (menu.hidden = !menu.hidden);
+    }
+}
