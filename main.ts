@@ -11,6 +11,7 @@ if (import.meta.main) {
     app.get("/", handleHome());
     app.post("/clicked", handleClick());
     app.get("/static/index.js", handleCatalyst());
+    // serveStatic https://hono.dev/getting-started/nodejs#serve-static-files
     app.get("/static/*", serveStatic({ root: "/" }));
     Deno.serve(app.fetch);
 }
