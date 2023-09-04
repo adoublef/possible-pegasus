@@ -11,7 +11,17 @@ export function handleHome(): Handler {
                 <header>
                     <nav>
                         <a href="/">Home</a>
-                        <DropDown />
+                        <DropDown>
+                            <li>
+                                <a href="#a">a</a>
+                            </li>
+                            <li>
+                                <a href="#b">b</a>
+                            </li>
+                            <li>
+                                <a href="#c">c</a>
+                            </li>
+                        </DropDown>
                     </nav>
                 </header>
                 <main>

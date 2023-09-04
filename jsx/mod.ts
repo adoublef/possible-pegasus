@@ -1,4 +1,4 @@
-import { HtmlEscapedString,html } from "$deps/hono.ts";
+import { html, HtmlEscapedString } from "$deps/hono.ts";
 
 // <link rel="preload" href="/static/htmx.org@1.9.5.min.js" as="script" />
 // <link rel="preload" href="/static/index.js" as="script" />
@@ -41,9 +41,11 @@ export const HelloWorld = ({ name = "World" }) =>
 /**
  * DropDown
  */
-export const DropDown = ()=>
-    html`
+export const DropDown = (
+    { children }: { children?: HtmlEscapedString | HtmlEscapedString[] },
+) => html`
 <drop-down role="navigation" aria-label="primary">
+    ${children}
 <template data-shadowroot>
 <button
     aria-expanded="false"
@@ -54,15 +56,7 @@ export const DropDown = ()=>
     custom
 </button>
 <ul id="options" hidden>
-    <li>
-        <a href="#a">a</a>
-    </li>
-    <li>
-        <a href="#b">b</a>
-    </li>
-    <li>
-        <a href="#c">c</a>
-    </li>
+    <slot></slot>
 </ul>
 </template>
-</drop-down>`
+</drop-down>`;
