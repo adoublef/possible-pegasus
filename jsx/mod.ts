@@ -12,10 +12,12 @@ export const Content = (
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${title}</title>
+    <link rel="preload" href="/static/htmx.org@1.9.5.min.js" as="script" />
     <script src="/static/htmx.org@1.9.5.min.js" defer></script>
+    <link rel="preload" href="/static/index.js" as="script" />
     <script type="module" src="/static/index.js" defer></script>
 </head>
-<body>
+<body hx-boost="${true}">
     ${children}
 </body>
 </html>`;
