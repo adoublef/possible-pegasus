@@ -1,18 +1,4 @@
 import { Handler, html, HtmlEscapedString } from "$deps/hono.ts";
-import { bundle } from "$deps/deno_emit.ts";
-
-// href - https://github.com/denoland/deno_emit
-const { code } = await bundle(
-    new URL("./components/mod.ts", import.meta.url),
-    { cacheRoot: Deno.cwd() },
-);
-
-export function handleBundle(path: string): Handler {
-    return /* async */ (c) => {
-        c.header("content-type", "application/javascript; charset=utf-8");
-        return c.newResponse(code);
-    };
-}
 
 // TODO - link to settings, about, and another page
 export function handleHome(): Handler {
