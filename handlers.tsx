@@ -19,9 +19,9 @@ export function handleHome(): Handler {
 export function handleClick(): Handler {
     return (c) => {
         return c.html(
-            <span>
+            <div>
                 Clicked
-            </span>,
+            </div>,
         );
     };
 }
