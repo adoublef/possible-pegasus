@@ -2,7 +2,7 @@ import {
     attr,
     controller,
     target,
-} from "https://esm.sh/@github/catalyst@1.6.0";
+} from "$deps/catalyst.ts";
 
 // TODO - use @github/catalyst
 // decorators - https://catalyst.rocks/guide/decorators/
