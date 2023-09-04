@@ -1,5 +1,5 @@
 // https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement
-import { Hono, logger, serveStatic } from "$deps/hono.ts";
+import { Hono, cors, logger, serveStatic } from "$deps/hono.ts";
 import { handleCatalyst } from "$components/handlers.ts";
 import { handleClick, handleHome } from "./handlers.tsx";
 
