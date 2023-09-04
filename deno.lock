@@ -104,6 +104,8 @@
     "https://deno.land/x/hono@v3.5.7/validator/index.ts": "6c986e8b91dcf857ecc8164a506ae8eea8665792a4ff7215471df669c632ae7c",
     "https://deno.land/x/hono@v3.5.7/validator/validator.ts": "9f3ef3ab2310cb1348019e1d8bbdf866543358eb9053b4bdc7285335a4fd6916",
     "https://deno.land/x/wasmbuild@0.14.1/cache.ts": "89eea5f3ce6035a1164b3e655c95f21300498920575ade23161421f5b01967f4",
-    "https://deno.land/x/wasmbuild@0.14.1/loader.ts": "d98d195a715f823151cbc8baa3f32127337628379a02d9eb2a3c5902dbccfc02"
+    "https://deno.land/x/wasmbuild@0.14.1/loader.ts": "d98d195a715f823151cbc8baa3f32127337628379a02d9eb2a3c5902dbccfc02",
+    "https://esm.sh/hono@3.3.4/jsx/jsx-runtime": "6544596b9f3ab66f84b52e2a17746e3bbbf3613e5b00ad37dc4c28b857eac8af",
+    "https://esm.sh/v131/hono@3.3.4/denonext/jsx/jsx-runtime.js": "a35307276b2250f7a78a372563585edea15ac4eb8c7764adaf3f1aab9a52a707"
   }
 }

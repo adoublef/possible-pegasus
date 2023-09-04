@@ -1,15 +1,20 @@
-import { controller, target, attr } from "https://esm.sh/@github/catalyst@1.6.0";
+import {
+    attr,
+    controller,
+    target,
+} from "https://esm.sh/@github/catalyst@1.6.0";
 
 // TODO - use @github/catalyst
-// src https://catalyst.rocks/guide/introduction/
+// decorators - https://catalyst.rocks/guide/decorators/
 @controller
 export class HelloWorldElement extends HTMLElement {
-    // gets the html element https://catalyst.rocks/guide/decorators/
+    // @target - https://catalyst.rocks/guide/targets/
     @target
     declare output: HTMLElement;
 
-    // TODO - get attribute
-    @attr name = "World"
+    // @attr - https://catalyst.rocks/guide/attrs/
+    @attr
+    name = "World";
 
     greet() {
         this.output.textContent = `Hello, ${this.name}!`;

@@ -1,6 +1,6 @@
 {
     "tasks": {
-        "dev": "deno run --watch --unstable -A main.ts"
+        "dev": "deno run --watch --unstable -A main.tsx"
     },
     "imports": {
         "$deps/": "./deps/",
