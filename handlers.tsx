@@ -20,7 +20,20 @@ export function handleHome(): Handler {
         return c.html(
             <Content title={`Hello, ${name}`}>
                 <HelloWorld name={name} />
+                <button hx-post="/clicked" hx-swap="outerHTML">
+                    Click Me
+                </button>
             </Content>,
+        );
+    };
+}
+
+export function handleClick(): Handler {
+    return (c) => {
+        return c.html(
+            <span>
+                Clicked
+            </span>,
         );
     };
 }
@@ -35,6 +48,7 @@ const Content = (
 <head>
     <meta charset="UTF-8">
     <title>${title}</title>
+    <script src="https://unpkg.com/htmx.org@1.9.5" defer></script>
     <script type="module" src="/index.js" defer></script>
 </head>
 <body>
