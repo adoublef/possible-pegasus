@@ -24,9 +24,9 @@ export const Content = (
 
 export const HelloWorld = ({ name = "World" }) =>
     html`
-<hello-world data-name=${name} hx-post="/clicked" hx-swap="outerHTML">
+<hello-world data-name=${name}>
 <template data-shadowroot>
-    <button data-action="mouseover:hello-world#greet">
+    <button data-action="click:hello-world#greet">
         Hello
     </button>
     <span data-target="hello-world.output">
