@@ -32,6 +32,3 @@ gclient_config.py_entries
 
 # JUnit files produced by deno test --junit
 junit.xml
-
-# No not push esm.sh cahce
-deps/http/esm.sh
