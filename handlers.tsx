@@ -1,13 +1,14 @@
 import { Handler, html, HtmlEscapedString } from "$deps/hono.ts";
 import { bundle } from "$deps/deno_emit.ts";
 
+// href - https://github.com/denoland/deno_emit
+const { code } = await bundle(
+    new URL("./components/mod.ts", import.meta.url),
+    { cacheRoot: Deno.cwd() },
+);
+
 export function handleBundle(path: string): Handler {
-    return async (c) => {
-        // href - https://github.com/denoland/deno_emit
-        const { code } = await bundle(
-            new URL(path, import.meta.url),
-            { cacheRoot: Deno.cwd() },
-        );
+    return /* async */ (c) => {
         c.header("content-type", "application/javascript; charset=utf-8");
         return c.newResponse(code);
     };
@@ -38,6 +39,7 @@ export function handleClick(): Handler {
     };
 }
 
+// <head> - https://htmlhead.dev/
 const Content = (
     { children, title }: {
         children?: HtmlEscapedString | HtmlEscapedString[];
@@ -47,6 +49,7 @@ const Content = (
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${title}</title>
     <script src="https://unpkg.com/htmx.org@1.9.5" defer></script>
     <script type="module" src="/index.js" defer></script>
