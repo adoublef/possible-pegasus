@@ -1,0 +1,2 @@
+/* esm.sh - @github/catalyst@1.6.0 */
+export * from "/v132/@github/catalyst@1.6.0/denonext/catalyst.mjs";

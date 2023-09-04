@@ -1,27 +1,17 @@
-class HelloWorld extends HTMLElement {
-    name;
-    static get observedAttributes() {
-        return ["name"];
-    }
+import { controller, target, attr } from "https://esm.sh/@github/catalyst@1.6.0";
 
-    constructor() {
-        super();
-        this.name = "World";
-    }
+// TODO - use @github/catalyst
+// src https://catalyst.rocks/guide/introduction/
+@controller
+export class HelloWorldElement extends HTMLElement {
+    // gets the html element https://catalyst.rocks/guide/decorators/
+    @target
+    declare output: HTMLElement;
 
-    connectedCallback() {
-        this.textContent = `Hello ${this.name}!`;
-    }
+    // TODO - get attribute
+    @attr name = "World"
 
-    attributeChangedCallback(
-        property: string,
-        oldValue: string,
-        newValue: string,
-    ) {
-        if (oldValue === newValue) return;
-        // @ts-ignore currently only supports `name`
-        this[property] = newValue;
+    greet() {
+        this.output.textContent = `Hello, ${this.name}!`;
     }
 }
-
-customElements.define("hello-world", HelloWorld);
