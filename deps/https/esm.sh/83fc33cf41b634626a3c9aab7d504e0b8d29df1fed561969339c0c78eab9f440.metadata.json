@@ -1,0 +1,27 @@
+{
+  "headers": {
+    "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=GInnNUv9u3FFYRwL39lxLoCKvVkbqtfbdaNejorxR6oIffcqScscxBU5q8ehLpblvwJt47YUJRrsFfvZfYtruL771W7fTsoEQEimUokrcvmOGV6TpEzYJKs%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+    "x-content-source": "https://esmbuild.com",
+    "content-type": "application/javascript; charset=utf-8",
+    "x-esm-id": "v132/@github/catalyst@1.6.0/denonext/catalyst.mjs",
+    "x-typescript-types": "https://esm.sh/v132/@github/catalyst@1.6.0/lib/index.d.ts",
+    "age": "6988",
+    "cf-cache-status": "HIT",
+    "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "access-control-allow-origin": "*",
+    "last-modified": "Mon, 04 Sep 2023 12:05:39 GMT",
+    "date": "Mon, 04 Sep 2023 14:02:07 GMT",
+    "cache-control": "public, max-age=86400",
+    "server": "cloudflare",
+    "access-control-allow-methods": "*",
+    "access-control-expose-headers": "X-Esm-Id, X-TypeScript-Types",
+    "cf-ray": "8016c4b42d7876d7-LHR",
+    "vary": "Origin, User-Agent, Accept-Encoding"
+  },
+  "url": "https://esm.sh/@github/catalyst@1.6.0",
+  "now": {
+    "secs_since_epoch": 1693832120,
+    "nanos_since_epoch": 0
+  }
+}

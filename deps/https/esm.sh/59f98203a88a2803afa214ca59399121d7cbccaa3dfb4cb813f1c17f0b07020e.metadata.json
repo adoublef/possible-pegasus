@@ -1,0 +1,24 @@
+{
+  "headers": {
+    "last-modified": "Mon, 04 Sep 2023 12:05:40 GMT",
+    "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+    "x-content-source": "esm-worker",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=TH8lV19TFilRsdTcaVoCdUo2dne3UKn3JZj6yqLvlq983LxEy6k7PRlklF3D61f%2F9xIbNkVtTKEhbLdlwk60aknusdtay5fgCYuxmmdBbWY3Q6RuXRN%2B9Bs%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+    "access-control-allow-methods": "*",
+    "cf-cache-status": "HIT",
+    "cf-ray": "8016c4b56f3176d7-LHR",
+    "content-type": "application/javascript; charset=utf-8",
+    "age": "6987",
+    "date": "Mon, 04 Sep 2023 14:02:07 GMT",
+    "cache-control": "public, max-age=31536000, immutable",
+    "server": "cloudflare",
+    "access-control-allow-origin": "*",
+    "vary": "Origin, Accept-Encoding"
+  },
+  "url": "https://esm.sh/v132/@github/catalyst@1.6.0/denonext/catalyst.mjs",
+  "now": {
+    "secs_since_epoch": 1693832120,
+    "nanos_since_epoch": 0
+  }
+}
