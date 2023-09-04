@@ -13,12 +13,12 @@ if (import.meta.main) {
         return c.text(code);
     });
 
-    app.get("/", (c) => {
+    app.get("/:name?", (c) => {
+        const name = c.req.param("name") || "Deno" 
         return c.html(html`
             <script src="/index.js" defer></script>
             <body>
-                <hello-world></hello-world>
-                <hello-world name="Rahim"></hello-world>
+                <hello-world name="${name}"></hello-world>
             </body>
         `);
     });
