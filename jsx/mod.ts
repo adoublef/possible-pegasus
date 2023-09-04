@@ -1,7 +1,7 @@
 import { HtmlEscapedString,html } from "$deps/hono.ts";
 
 // <head> - https://htmlhead.dev/
-export const Content = (
+export const Html = (
     { children, title }: {
         children?: HtmlEscapedString | HtmlEscapedString[];
         title?: string;
@@ -21,7 +21,9 @@ export const Content = (
     ${children}
 </body>
 </html>`;
-
+// NOTE if defined with component, then it imports everything
+// GitHub do recommend to define the templates in the DOM
+// so this may be ok
 export const HelloWorld = ({ name = "World" }) =>
     html`
 <hello-world data-name=${name}>
@@ -33,3 +35,9 @@ export const HelloWorld = ({ name = "World" }) =>
     </span>
 </template>
 </hello-world>`;
+export const DropDown = ()=>
+    html`
+<drop-down>
+<template data-shadowroot>
+</template>
+</drop-down>`
