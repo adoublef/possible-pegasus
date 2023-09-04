@@ -3,6 +3,7 @@ import { bundle } from "$deps/deno_emit.ts";
 
 const { code } = await bundle(
     new URL("./components/mod.ts", import.meta.url),
+    { cacheRoot: Deno.cwd() }
 );
 
 // Learn more at https://deno.land/manual/examples/module_metadata#concepts
