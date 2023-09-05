@@ -10,18 +10,24 @@ export function handleHome(): Handler {
             <Html title={`Hello, ${name}`}>
                 <header>
                     <nav>
-                        <a href="/">Home</a>
-                        <DropDown>
+                        <ul>
                             <li>
-                                <a href="#a">a</a>
+                                <a href="#1">1</a>
                             </li>
                             <li>
-                                <a href="#b">b</a>
+                                <DropDown textContent="cta">
+                                    <li>
+                                        <a href="#2">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#3">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#4">4</a>
+                                    </li>
+                                </DropDown>
                             </li>
-                            <li>
-                                <a href="#c">c</a>
-                            </li>
-                        </DropDown>
+                        </ul>
                     </nav>
                 </header>
                 <main>
