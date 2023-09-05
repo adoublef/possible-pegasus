@@ -21,7 +21,7 @@ export class DropDownElement extends HTMLElement {
     expand() {
         const expanded = this.button.getAttribute("aria-expanded") === "true" ||
             false;
-        this.button.ariaExpanded = (!expanded).toString();
+        this.button.setAttribute("aria-expanded", (!expanded).toString());
 
         const menu = this.button.nextElementSibling as HTMLElement | null;
         menu && (menu.hidden = !menu.hidden);
