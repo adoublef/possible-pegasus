@@ -1,8 +1,5 @@
 import { html, HtmlEscapedString } from "$deps/hono.ts";
 
-// <link rel="preload" href="/static/htmx.org@1.9.5.min.js" as="script" />
-// <link rel="preload" href="/static/index.js" as="script" />
-
 // <head> - https://htmlhead.dev/
 export const Html = (
     { children, title }: {
@@ -31,7 +28,7 @@ export const Html = (
 // so this may be ok
 export const HelloWorld = ({ name = "World" }) =>
     html`
-<hello-world data-name=${name}>
+<hello-world data-name="${name}">
 <template data-shadowroot>
     <button data-action="click:hello-world#greet">
         Hello
