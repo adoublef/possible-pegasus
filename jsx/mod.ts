@@ -44,7 +44,7 @@ export const HelloWorld = ({ name = "World" }) =>
 export const DropDown = (
     { children }: { children?: HtmlEscapedString | HtmlEscapedString[] },
 ) => html`
-<drop-down role="navigation" aria-label="primary" aria-expanded="false">
+<drop-down role="navigation" aria-label="primary">
     ${children}
 <template data-shadowroot>
 <button
