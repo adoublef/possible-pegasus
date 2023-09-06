@@ -1,0 +1,24 @@
+{
+  "headers": {
+    "access-control-allow-origin": "*",
+    "age": "156",
+    "last-modified": "Wed, 06 Sep 2023 06:05:42 GMT",
+    "content-type": "application/javascript; charset=utf-8",
+    "server": "cloudflare",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "date": "Wed, 06 Sep 2023 06:08:18 GMT",
+    "cf-ray": "802489666bfe2402-LHR",
+    "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+    "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=QQAToZ6lNZhQdECYUnfOWSzSFwqtBvWMPPodI7TWGDyyqoIY0nYmkGPF2W%2Fe5qzdg%2BcBiqY5y3IK1h2qkzKr5Lx7sGVkhABUW1ibYUbsaS4XOr96JshpVB4%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+    "cache-control": "public, max-age=31536000, immutable",
+    "vary": "Origin, Accept-Encoding",
+    "cf-cache-status": "HIT",
+    "access-control-allow-methods": "*",
+    "x-content-source": "https://esmbuild.com"
+  },
+  "url": "https://esm.sh/v132/@lit/reactive-element@1.6.3/denonext/decorators/property.js",
+  "now": {
+    "secs_since_epoch": 1693980498,
+    "nanos_since_epoch": 0
+  }
+}

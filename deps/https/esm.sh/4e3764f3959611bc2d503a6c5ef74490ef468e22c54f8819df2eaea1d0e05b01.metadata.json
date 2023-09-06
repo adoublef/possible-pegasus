@@ -1,0 +1,21 @@
+{
+  "headers": {
+    "access-control-allow-origin": "*",
+    "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=w336az3ccDvjtjcWiNqzvSaPGFuLojmSeQR2Y%2FpgGryLNWA4IQ%2Bpha2USTEmsQC1T%2BL4NGRcnA6%2FkE8%2FYvK1FNwDBjy5JtLTLY643dTdiJnY3nWwLPiD4JI%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+    "x-content-source": "https://esmbuild.com",
+    "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+    "content-type": "application/javascript; charset=utf-8",
+    "server": "cloudflare",
+    "access-control-allow-methods": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-ray": "802489666bfb2402-LHR",
+    "date": "Wed, 06 Sep 2023 06:08:19 GMT",
+    "vary": "Origin, Accept-Encoding",
+    "cache-control": "public, max-age=31536000, immutable"
+  },
+  "url": "https://esm.sh/v132/lit-html@2.8.0/denonext/is-server.js",
+  "now": {
+    "secs_since_epoch": 1693980499,
+    "nanos_since_epoch": 0
+  }
+}

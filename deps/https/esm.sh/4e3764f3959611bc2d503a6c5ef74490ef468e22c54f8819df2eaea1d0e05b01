@@ -1,0 +1,12 @@
+/* esm.sh - esbuild bundle(lit-html@2.8.0/is-server) denonext production */
+var e=!1;export{e as isServer};
+/*! Bundled license information:
+
+lit-html/is-server.js:
+  (**
+   * @license
+   * Copyright 2022 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   *)
+*/
+//# sourceMappingURL=is-server.js.map

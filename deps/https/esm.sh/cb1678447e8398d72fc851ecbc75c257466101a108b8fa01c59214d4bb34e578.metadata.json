@@ -1,0 +1,24 @@
+{
+  "headers": {
+    "access-control-allow-origin": "*",
+    "x-content-source": "https://esmbuild.com",
+    "access-control-allow-methods": "*",
+    "cf-ray": "802489666c0a2402-LHR",
+    "cf-cache-status": "HIT",
+    "age": "162",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "last-modified": "Wed, 06 Sep 2023 06:05:36 GMT",
+    "content-type": "application/javascript; charset=utf-8",
+    "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=LpdZROaHA53FYFtO79VeRZ2vjCerzJXTNsqYQPpukXW7iEQnSq53sniaaHCcGQKB1aO1E11FMGXjdws3jG2TOF3v6ZXszephhvUqPRNjcvamTceXQL8rZcE%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+    "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+    "date": "Wed, 06 Sep 2023 06:08:18 GMT",
+    "vary": "Origin, Accept-Encoding",
+    "server": "cloudflare",
+    "cache-control": "public, max-age=31536000, immutable"
+  },
+  "url": "https://esm.sh/v132/lit@2.8.0/denonext/decorators.js",
+  "now": {
+    "secs_since_epoch": 1693980498,
+    "nanos_since_epoch": 0
+  }
+}

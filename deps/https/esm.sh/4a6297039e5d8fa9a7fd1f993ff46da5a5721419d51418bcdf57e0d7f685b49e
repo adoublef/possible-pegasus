@@ -1,0 +1,19 @@
+/* esm.sh - esbuild bundle(@lit/reactive-element@1.6.3/decorators/query) denonext production */
+var d=({finisher:o,descriptor:i})=>(t,n)=>{var r;if(n===void 0){let e=(r=t.originalKey)!==null&&r!==void 0?r:t.key,l=i!=null?{kind:"method",placement:"prototype",key:e,descriptor:i(t.key)}:{...t,key:e};return o!=null&&(l.finisher=function(c){o(c,e)}),l}{let e=t.constructor;i!==void 0&&Object.defineProperty(t,n,i(n)),o?.(e,n)}};function y(o,i){return d({descriptor:t=>{let n={get(){var r,e;return(e=(r=this.renderRoot)===null||r===void 0?void 0:r.querySelector(o))!==null&&e!==void 0?e:null},enumerable:!0,configurable:!0};if(i){let r=typeof t=="symbol"?Symbol():"__"+t;n.get=function(){var e,l;return this[r]===void 0&&(this[r]=(l=(e=this.renderRoot)===null||e===void 0?void 0:e.querySelector(o))!==null&&l!==void 0?l:null),this[r]}}return n}})}export{y as query};
+/*! Bundled license information:
+
+@lit/reactive-element/decorators/base.js:
+  (**
+   * @license
+   * Copyright 2017 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   *)
+
+@lit/reactive-element/decorators/query.js:
+  (**
+   * @license
+   * Copyright 2017 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   *)
+*/
+//# sourceMappingURL=query.js.map

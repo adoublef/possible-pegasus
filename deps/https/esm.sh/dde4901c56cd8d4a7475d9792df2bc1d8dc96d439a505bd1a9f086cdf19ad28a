@@ -1,0 +1,19 @@
+/* esm.sh - esbuild bundle(@lit/reactive-element@1.6.3/decorators/event-options) denonext production */
+var s=({finisher:t,descriptor:r})=>(e,n)=>{var i;if(n===void 0){let o=(i=e.originalKey)!==null&&i!==void 0?i:e.key,p=r!=null?{kind:"method",placement:"prototype",key:o,descriptor:r(e.key)}:{...e,key:o};return t!=null&&(p.finisher=function(c){t(c,o)}),p}{let o=e.constructor;r!==void 0&&Object.defineProperty(e,n,r(n)),t?.(o,n)}};function a(t){return s({finisher:(r,e)=>{Object.assign(r.prototype[e],t)}})}export{a as eventOptions};
+/*! Bundled license information:
+
+@lit/reactive-element/decorators/base.js:
+  (**
+   * @license
+   * Copyright 2017 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   *)
+
+@lit/reactive-element/decorators/event-options.js:
+  (**
+   * @license
+   * Copyright 2017 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   *)
+*/
+//# sourceMappingURL=event-options.js.map

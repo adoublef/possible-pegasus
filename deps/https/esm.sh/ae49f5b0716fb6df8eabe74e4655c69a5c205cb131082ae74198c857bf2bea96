@@ -1,0 +1,19 @@
+/* esm.sh - esbuild bundle(@lit/reactive-element@1.6.3/decorators/query-all) denonext production */
+var l=({finisher:t,descriptor:o})=>(e,r)=>{var i;if(r===void 0){let n=(i=e.originalKey)!==null&&i!==void 0?i:e.key,d=o!=null?{kind:"method",placement:"prototype",key:n,descriptor:o(e.key)}:{...e,key:n};return t!=null&&(d.finisher=function(c){t(c,n)}),d}{let n=e.constructor;o!==void 0&&Object.defineProperty(e,r,o(r)),t?.(n,r)}};function a(t){return l({descriptor:o=>({get(){var e,r;return(r=(e=this.renderRoot)===null||e===void 0?void 0:e.querySelectorAll(t))!==null&&r!==void 0?r:[]},enumerable:!0,configurable:!0})})}export{a as queryAll};
+/*! Bundled license information:
+
+@lit/reactive-element/decorators/base.js:
+  (**
+   * @license
+   * Copyright 2017 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   *)
+
+@lit/reactive-element/decorators/query-all.js:
+  (**
+   * @license
+   * Copyright 2017 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   *)
+*/
+//# sourceMappingURL=query-all.js.map

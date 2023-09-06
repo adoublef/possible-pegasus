@@ -1,0 +1,19 @@
+/* esm.sh - esbuild bundle(@lit/reactive-element@1.6.3/decorators/query-assigned-elements) denonext production */
+var c=({finisher:e,descriptor:t})=>(o,l)=>{var r;if(l===void 0){let n=(r=o.originalKey)!==null&&r!==void 0?r:o.key,s=t!=null?{kind:"method",placement:"prototype",key:n,descriptor:t(o.key)}:{...o,key:n};return e!=null&&(s.finisher=function(i){e(i,n)}),s}{let n=o.constructor;t!==void 0&&Object.defineProperty(o,l,t(l)),e?.(n,l)}};var d,p=((d=window.HTMLSlotElement)===null||d===void 0?void 0:d.prototype.assignedElements)!=null?(e,t)=>e.assignedElements(t):(e,t)=>e.assignedNodes(t).filter(o=>o.nodeType===Node.ELEMENT_NODE);function m(e){let{slot:t,selector:o}=e??{};return c({descriptor:l=>({get(){var r;let n="slot"+(t?`[name=${t}]`:":not([name])"),s=(r=this.renderRoot)===null||r===void 0?void 0:r.querySelector(n),i=s!=null?p(s,e):[];return o?i.filter(a=>a.matches(o)):i},enumerable:!0,configurable:!0})})}export{m as queryAssignedElements};
+/*! Bundled license information:
+
+@lit/reactive-element/decorators/base.js:
+  (**
+   * @license
+   * Copyright 2017 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   *)
+
+@lit/reactive-element/decorators/query-assigned-elements.js:
+  (**
+   * @license
+   * Copyright 2021 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   *)
+*/
+//# sourceMappingURL=query-assigned-elements.js.map

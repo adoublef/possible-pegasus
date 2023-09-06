@@ -1,0 +1,19 @@
+/* esm.sh - esbuild bundle(@lit/reactive-element@1.6.3/decorators/state) denonext production */
+var o=(t,r)=>r.kind==="method"&&r.descriptor&&!("value"in r.descriptor)?{...r,finisher(i){i.createProperty(r.key,t)}}:{kind:"field",key:Symbol(),placement:"own",descriptor:{},originalKey:r.key,initializer(){typeof r.initializer=="function"&&(this[r.key]=r.initializer.call(this))},finisher(i){i.createProperty(r.key,t)}},n=(t,r,i)=>{r.constructor.createProperty(i,t)};function e(t){return(r,i)=>i!==void 0?n(t,r,i):o(t,r)}function c(t){return e({...t,state:!0})}export{c as state};
+/*! Bundled license information:
+
+@lit/reactive-element/decorators/property.js:
+  (**
+   * @license
+   * Copyright 2017 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   *)
+
+@lit/reactive-element/decorators/state.js:
+  (**
+   * @license
+   * Copyright 2017 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   *)
+*/
+//# sourceMappingURL=state.js.map

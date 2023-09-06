@@ -1,0 +1,24 @@
+{
+  "headers": {
+    "content-type": "application/javascript; charset=utf-8",
+    "access-control-allow-methods": "*",
+    "server": "cloudflare",
+    "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+    "access-control-allow-origin": "*",
+    "age": "160",
+    "last-modified": "Wed, 06 Sep 2023 06:05:38 GMT",
+    "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Mx%2Bel9ryDkHqrEczjbdhFwr%2B5QdHHvgCsjkSLHJX50hqI%2F7rB5dnd9TjGCORxtUdErEiIS508si8PxkiiHFVayJ%2BwLGiTac9Ua%2FYe39SaN39FtzQd35TQM4%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+    "x-content-source": "https://esmbuild.com",
+    "cache-control": "public, max-age=31536000, immutable",
+    "cf-ray": "802489666c012402-LHR",
+    "vary": "Origin, Accept-Encoding",
+    "cf-cache-status": "HIT",
+    "date": "Wed, 06 Sep 2023 06:08:18 GMT",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "url": "https://esm.sh/v132/@lit/reactive-element@1.6.3/denonext/decorators/event-options.js",
+  "now": {
+    "secs_since_epoch": 1693980498,
+    "nanos_since_epoch": 0
+  }
+}

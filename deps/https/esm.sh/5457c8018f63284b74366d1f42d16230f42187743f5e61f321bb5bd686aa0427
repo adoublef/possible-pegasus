@@ -1,0 +1,11 @@
+/* esm.sh - lit@2.8.0/decorators */
+import "/v132/@lit/reactive-element@1.6.3/denonext/decorators/custom-element.js";
+import "/v132/@lit/reactive-element@1.6.3/denonext/decorators/property.js";
+import "/v132/@lit/reactive-element@1.6.3/denonext/decorators/state.js";
+import "/v132/@lit/reactive-element@1.6.3/denonext/decorators/event-options.js";
+import "/v132/@lit/reactive-element@1.6.3/denonext/decorators/query.js";
+import "/v132/@lit/reactive-element@1.6.3/denonext/decorators/query-all.js";
+import "/v132/@lit/reactive-element@1.6.3/denonext/decorators/query-async.js";
+import "/v132/@lit/reactive-element@1.6.3/denonext/decorators/query-assigned-elements.js";
+import "/v132/@lit/reactive-element@1.6.3/denonext/decorators/query-assigned-nodes.js";
+export * from "/v132/lit@2.8.0/denonext/decorators.js";

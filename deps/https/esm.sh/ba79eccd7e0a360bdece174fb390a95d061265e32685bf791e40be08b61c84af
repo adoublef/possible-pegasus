@@ -1,0 +1,19 @@
+/* esm.sh - esbuild bundle(@lit/reactive-element@1.6.3/decorators/query-async) denonext production */
+var c=({finisher:r,descriptor:t})=>(e,n)=>{var i;if(n===void 0){let o=(i=e.originalKey)!==null&&i!==void 0?i:e.key,d=t!=null?{kind:"method",placement:"prototype",key:o,descriptor:t(e.key)}:{...e,key:o};return r!=null&&(d.finisher=function(a){r(a,o)}),d}{let o=e.constructor;t!==void 0&&Object.defineProperty(e,n,t(n)),r?.(o,n)}};function y(r){return c({descriptor:t=>({async get(){var e;return await this.updateComplete,(e=this.renderRoot)===null||e===void 0?void 0:e.querySelector(r)},enumerable:!0,configurable:!0})})}export{y as queryAsync};
+/*! Bundled license information:
+
+@lit/reactive-element/decorators/base.js:
+  (**
+   * @license
+   * Copyright 2017 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   *)
+
+@lit/reactive-element/decorators/query-async.js:
+  (**
+   * @license
+   * Copyright 2017 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   *)
+*/
+//# sourceMappingURL=query-async.js.map

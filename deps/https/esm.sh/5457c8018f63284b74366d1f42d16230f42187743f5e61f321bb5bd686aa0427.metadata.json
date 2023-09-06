@@ -1,0 +1,27 @@
+{
+  "headers": {
+    "last-modified": "Wed, 06 Sep 2023 06:05:36 GMT",
+    "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+    "x-content-source": "https://esmbuild.com",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=iuTaUDA9RJrHNCnCPALikCb6Dqun938a1bU4acRjwB1x64bQBSjAb%2B3YuzSkwE0yBA5M2kS7c3LBfZFiTB%2BOw6%2B9PRejYJ89x%2Bsd9semCP5CduBqP%2BiWSO0%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+    "access-control-allow-methods": "*",
+    "cf-cache-status": "HIT",
+    "cf-ray": "802489600c782402-LHR",
+    "content-type": "application/javascript; charset=utf-8",
+    "age": "161",
+    "date": "Wed, 06 Sep 2023 06:08:17 GMT",
+    "access-control-expose-headers": "X-Esm-Id, X-TypeScript-Types",
+    "x-esm-id": "v132/lit@2.8.0/denonext/decorators.js",
+    "cache-control": "public, max-age=86400",
+    "server": "cloudflare",
+    "access-control-allow-origin": "*",
+    "x-typescript-types": "https://esm.sh/v132/lit@2.8.0/development/decorators.d.ts",
+    "vary": "Origin, User-Agent, Accept-Encoding"
+  },
+  "url": "https://esm.sh/lit@2.8.0/decorators",
+  "now": {
+    "secs_since_epoch": 1693980498,
+    "nanos_since_epoch": 0
+  }
+}
