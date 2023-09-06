@@ -27,3 +27,16 @@ export class DropDownElement extends HTMLElement {
         menu && (menu.hidden = !menu.hidden);
     }
 }
+
+@controller
+export class SawtoothPulseElement extends HTMLElement {
+    play() {
+        const audioContext = new AudioContext()
+        const sawtooth = new OscillatorNode(audioContext, { type: "sawtooth", frequency: 110 });
+
+        sawtooth.connect(audioContext.destination)
+        
+        sawtooth.start(audioContext.currentTime)
+        sawtooth.stop(audioContext.currentTime + 2)
+    }
+}

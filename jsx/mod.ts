@@ -23,6 +23,15 @@ export const Html = (
     ${children}
 </body>
 </html>`;
+/** `<sound-pad>` */
+export const Sawtooth = ()=>html`
+<sawtooth-pulse>
+<template data-shadowroot>
+    <button
+        data-action="click:sawtooth-pulse#play"
+    >play</button>
+</template>
+</sawtooth-pulse>`
 // NOTE if defined with component, then it imports everything
 // GitHub do recommend to define the templates in the DOM
 // so this may be ok
@@ -37,9 +46,7 @@ export const HelloWorld = ({ name = "World" }) =>
     </span>
 </template>
 </hello-world>`;
-/**
- * DropDown
- */
+/** `<drop-down>` */
 export const DropDown = (
     { children, role, id = "menu", textContent = "button" }: {
         children?: HtmlEscapedString | HtmlEscapedString[];

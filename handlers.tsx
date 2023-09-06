@@ -1,5 +1,5 @@
 import { Handler } from "$deps/hono.ts";
-import { DropDown, HelloWorld, Html } from "./jsx/mod.ts";
+import { DropDown, HelloWorld, Html, Sawtooth } from "./jsx/mod.ts";
 
 // TODO - link to settings, about, and another page
 export function handleHome(): Handler {
@@ -32,12 +32,15 @@ export function handleHome(): Handler {
                 </header>
                 <main>
                     <h1>Lorem ipsum dolor sit amet.</h1>
+                    <hr />
                     <button
                         hx-post={`/clicked?name=${name}`}
                         hx-swap="outerHTML"
                     >
                         Click Me
                     </button>
+                    <hr />
+                    <Sawtooth />
                 </main>
             </Html>,
         );
