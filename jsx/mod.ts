@@ -24,14 +24,15 @@ export const Html = (
 </body>
 </html>`;
 /** `<sound-pad>` */
-export const Sawtooth = ()=>html`
+export const Sawtooth = () =>
+    html`
 <sawtooth-pulse>
 <template data-shadowroot>
     <button
         data-action="click:sawtooth-pulse#play"
     >play</button>
 </template>
-</sawtooth-pulse>`
+</sawtooth-pulse>`;
 // NOTE if defined with component, then it imports everything
 // GitHub do recommend to define the templates in the DOM
 // so this may be ok
@@ -52,7 +53,7 @@ export const DropDown = (
         children?: HtmlEscapedString | HtmlEscapedString[];
         role?: string;
         id?: string;
-        textContent?: string
+        textContent?: string;
     },
 ) => html`
 <button
@@ -73,3 +74,9 @@ export const DropDown = (
 <ul id="${id}" hidden>
     ${children}
 </ul>`;
+/** Lit app */
+export const SimpleGreeting = (
+    { name = "World" },
+) => html`
+<simple-greeting name="${name}">
+</simple-greeting>`;
