@@ -16,8 +16,8 @@ export const Html = (
     <link rel="preload" href="/static/hyperscript.org@0.9.11.min.js" as="script" />
     <link rel="preload" crossOrigin href="/static/index.js" as="script" />
     <script src="/static/htmx.org@1.9.5.min.js" defer></script>
-    <script src="/static/hyperscript.org@0.9.11.min.js" defer></script>
-    <script src="/static/index.js" defer type="module"></script>
+    <script src="/static/hyperscript.org@0.9.11.min.js" async></script>
+    <script src="/static/index.js" async type="module"></script>
 </head>
 <body>
     ${children}
