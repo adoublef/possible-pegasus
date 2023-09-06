@@ -31,7 +31,6 @@ export class DropDownElement extends HTMLElement {
 @controller
 export class SawtoothPulseElement extends HTMLElement {
     play() {
-        const audioContext = new AudioContext()
         const sawtooth = new OscillatorNode(audioContext, { type: "sawtooth", frequency: 110 });
 
         sawtooth.connect(audioContext.destination)
@@ -40,3 +39,5 @@ export class SawtoothPulseElement extends HTMLElement {
         sawtooth.stop(audioContext.currentTime + 2)
     }
 }
+/* global context */
+const audioContext = new AudioContext()
